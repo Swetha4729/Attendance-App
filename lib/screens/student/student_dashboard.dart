@@ -197,8 +197,8 @@ class StudentDashboard extends StatelessWidget {
                             BarChartData(
                               maxY: 100,
                               minY: 0,
-                              alignment: BarChartAlignment.center,
-                              groupsSpace: 10,
+                              alignment: BarChartAlignment.spaceAround,
+                              groupsSpace: 12,
                               barTouchData: BarTouchData(enabled: false),
                               titlesData: FlTitlesData(
                                 show: true,
@@ -212,7 +212,7 @@ class StudentDashboard extends StatelessWidget {
                                   sideTitles: SideTitles(
                                     showTitles: true,
                                     interval: 25,
-                                    reservedSize: 30,
+                                    reservedSize: 28,
                                     getTitlesWidget: (value, meta) {
                                       return Text(
                                         '${value.toInt()}',
